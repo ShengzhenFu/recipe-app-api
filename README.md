@@ -12,6 +12,10 @@ docker-compose run --rm app sh -c "python manage.py wait_for_db && python manage
 
 docker-compose run --rm app sh -c "python manage.py createsuperuser"
 
+docker-compose run --rm app sh -c "python manage.py startapp user"
+
+docker-compose run --rm app sh -c "python manage.py test  --verbosity=2"
+
 https://docs.djangoproject.com/en/3.1/ref/contrib/admin/#reversing-admin-urls
 https://docs.djangoproject.com/en/3.2/topics/testing/tools/#overview-and-a-quick-example
 
