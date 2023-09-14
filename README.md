@@ -16,6 +16,8 @@ docker-compose run --rm app sh -c "python manage.py startapp user"
 
 docker-compose run --rm app sh -c "python manage.py test  --verbosity=2"
 
+docker-compose run --rm app sh -c "python manage.py startapp recipe"
+
 https://docs.djangoproject.com/en/3.1/ref/contrib/admin/#reversing-admin-urls
 https://docs.djangoproject.com/en/3.2/topics/testing/tools/#overview-and-a-quick-example
 
